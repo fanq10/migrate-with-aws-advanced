@@ -1,0 +1,106 @@
+2021-06-22 09:10:54,174 P1752 [INFO] ************************************************************
+2021-06-22 09:10:54,174 P1752 [INFO] ConfigSet bastion_install
+2021-06-22 09:10:54,174 P1752 [INFO] ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2021-06-22 09:10:54,174 P1752 [INFO] Config install_cfn
+2021-06-22 09:10:54,565 P1752 [INFO] ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2021-06-22 09:10:54,565 P1752 [INFO] Config install_apps
+2021-06-22 09:11:02,005 P1752 [INFO] ============================================================
+2021-06-22 09:11:02,005 P1752 [INFO] Command 0-installchrome
+2021-06-22 09:11:43,219 P1752 [INFO] Completed successfully.
+2021-06-22 09:11:48,267 P1752 [INFO] ============================================================
+2021-06-22 09:11:48,267 P1752 [INFO] Command 0-installputty
+2021-06-22 09:11:56,988 P1752 [INFO] -----------------------Command Output-----------------------
+2021-06-22 09:11:56,988 P1752 [INFO] 	
+2021-06-22 09:11:56,988 P1752 [INFO] 	
+2021-06-22 09:11:56,988 P1752 [INFO] 	    Directory: C:\Users\Administrator\Desktop
+2021-06-22 09:11:56,988 P1752 [INFO] 	
+2021-06-22 09:11:56,988 P1752 [INFO] 	
+2021-06-22 09:11:56,988 P1752 [INFO] 	Mode                LastWriteTime         Length Name                                                                  
+2021-06-22 09:11:56,988 P1752 [INFO] 	----                -------------         ------ ----                                                                  
+2021-06-22 09:11:56,988 P1752 [INFO] 	-a---l        6/22/2021   9:11 AM              0 Putty                                                                 
+2021-06-22 09:11:56,988 P1752 [INFO] 	The operation completed successfully.
+2021-06-22 09:11:56,988 P1752 [INFO] 	
+2021-06-22 09:11:56,988 P1752 [INFO] 	
+2021-06-22 09:11:56,988 P1752 [INFO] 	
+2021-06-22 09:11:56,988 P1752 [INFO] ------------------------------------------------------------
+2021-06-22 09:11:56,988 P1752 [INFO] Completed successfully.
+2021-06-22 09:12:02,005 P1752 [INFO] ============================================================
+2021-06-22 09:12:02,005 P1752 [INFO] Command 0-installpython
+2021-06-22 09:13:23,924 P1752 [INFO] -----------------------Command Output-----------------------
+2021-06-22 09:13:23,924 P1752 [INFO] 	
+2021-06-22 09:13:23,924 P1752 [INFO] 	Collecting pip
+2021-06-22 09:13:23,924 P1752 [INFO] 	  Downloading https://files.pythonhosted.org/packages/cd/82/04e9aaf603fdbaecb4323b9e723f13c92c245f6ab2902195c53987848c78/pip-21.1.2-py3-none-any.whl (1.5MB)
+2021-06-22 09:13:23,924 P1752 [INFO] 	Installing collected packages: pip
+2021-06-22 09:13:23,924 P1752 [INFO] 	  Found existing installation: pip 19.2.3
+2021-06-22 09:13:23,924 P1752 [INFO] 	    Uninstalling pip-19.2.3:
+2021-06-22 09:13:23,924 P1752 [INFO] 	      Successfully uninstalled pip-19.2.3
+2021-06-22 09:13:23,924 P1752 [INFO] 	Successfully installed pip-21.1.2
+2021-06-22 09:13:23,924 P1752 [INFO] 	Collecting requests
+2021-06-22 09:13:23,924 P1752 [INFO] 	  Downloading requests-2.25.1-py2.py3-none-any.whl (61 kB)
+2021-06-22 09:13:23,924 P1752 [INFO] 	Collecting chardet<5,>=3.0.2
+2021-06-22 09:13:23,924 P1752 [INFO] 	  Downloading chardet-4.0.0-py2.py3-none-any.whl (178 kB)
+2021-06-22 09:13:23,924 P1752 [INFO] 	Collecting urllib3<1.27,>=1.21.1
+2021-06-22 09:13:23,924 P1752 [INFO] 	  Downloading urllib3-1.26.5-py2.py3-none-any.whl (138 kB)
+2021-06-22 09:13:23,924 P1752 [INFO] 	Collecting certifi>=2017.4.17
+2021-06-22 09:13:23,924 P1752 [INFO] 	  Downloading certifi-2021.5.30-py2.py3-none-any.whl (145 kB)
+2021-06-22 09:13:23,924 P1752 [INFO] 	Collecting idna<3,>=2.5
+2021-06-22 09:13:23,924 P1752 [INFO] 	  Downloading idna-2.10-py2.py3-none-any.whl (58 kB)
+2021-06-22 09:13:23,924 P1752 [INFO] 	Installing collected packages: urllib3, idna, chardet, certifi, requests
+2021-06-22 09:13:23,924 P1752 [INFO] 	  WARNING: The script chardetect.exe is installed in 'C:\Users\Administrator\AppData\Local\Programs\Python\Python37-32\Scripts' which is not on PATH.
+2021-06-22 09:13:23,924 P1752 [INFO] 	  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+2021-06-22 09:13:23,924 P1752 [INFO] 	Successfully installed certifi-2021.5.30 chardet-4.0.0 idna-2.10 requests-2.25.1 urllib3-1.26.5
+2021-06-22 09:13:23,924 P1752 [INFO] 	Collecting paramiko
+2021-06-22 09:13:23,924 P1752 [INFO] 	  Downloading paramiko-2.7.2-py2.py3-none-any.whl (206 kB)
+2021-06-22 09:13:23,924 P1752 [INFO] 	Collecting bcrypt>=3.1.3
+2021-06-22 09:13:23,924 P1752 [INFO] 	  Downloading bcrypt-3.2.0-cp36-abi3-win32.whl (27 kB)
+2021-06-22 09:13:23,924 P1752 [INFO] 	Collecting pynacl>=1.0.1
+2021-06-22 09:13:23,924 P1752 [INFO] 	  Downloading PyNaCl-1.4.0-cp37-cp37m-win32.whl (193 kB)
+2021-06-22 09:13:23,924 P1752 [INFO] 	Collecting cryptography>=2.5
+2021-06-22 09:13:23,924 P1752 [INFO] 	  Downloading cryptography-3.4.7-cp36-abi3-win32.whl (1.4 MB)
+2021-06-22 09:13:23,924 P1752 [INFO] 	Collecting cffi>=1.1
+2021-06-22 09:13:23,924 P1752 [INFO] 	  Downloading cffi-1.14.5-cp37-cp37m-win32.whl (166 kB)
+2021-06-22 09:13:23,924 P1752 [INFO] 	Collecting six>=1.4.1
+2021-06-22 09:13:23,924 P1752 [INFO] 	  Downloading six-1.16.0-py2.py3-none-any.whl (11 kB)
+2021-06-22 09:13:23,924 P1752 [INFO] 	Collecting pycparser
+2021-06-22 09:13:23,924 P1752 [INFO] 	  Downloading pycparser-2.20-py2.py3-none-any.whl (112 kB)
+2021-06-22 09:13:23,924 P1752 [INFO] 	Installing collected packages: pycparser, six, cffi, pynacl, cryptography, bcrypt, paramiko
+2021-06-22 09:13:23,924 P1752 [INFO] 	Successfully installed bcrypt-3.2.0 cffi-1.14.5 cryptography-3.4.7 paramiko-2.7.2 pycparser-2.20 pynacl-1.4.0 six-1.16.0
+2021-06-22 09:13:23,924 P1752 [INFO] 	Collecting boto3
+2021-06-22 09:13:23,924 P1752 [INFO] 	  Downloading boto3-1.17.98-py2.py3-none-any.whl (131 kB)
+2021-06-22 09:13:23,924 P1752 [INFO] 	Collecting s3transfer<0.5.0,>=0.4.0
+2021-06-22 09:13:23,924 P1752 [INFO] 	  Downloading s3transfer-0.4.2-py2.py3-none-any.whl (79 kB)
+2021-06-22 09:13:23,924 P1752 [INFO] 	Collecting jmespath<1.0.0,>=0.7.1
+2021-06-22 09:13:23,924 P1752 [INFO] 	  Downloading jmespath-0.10.0-py2.py3-none-any.whl (24 kB)
+2021-06-22 09:13:23,924 P1752 [INFO] 	Collecting botocore<1.21.0,>=1.20.98
+2021-06-22 09:13:23,924 P1752 [INFO] 	  Downloading botocore-1.20.98-py2.py3-none-any.whl (7.6 MB)
+2021-06-22 09:13:23,924 P1752 [INFO] 	Collecting python-dateutil<3.0.0,>=2.1
+2021-06-22 09:13:23,924 P1752 [INFO] 	  Downloading python_dateutil-2.8.1-py2.py3-none-any.whl (227 kB)
+2021-06-22 09:13:23,924 P1752 [INFO] 	Requirement already satisfied: urllib3<1.27,>=1.25.4 in c:\users\administrator\appdata\local\programs\python\python37-32\lib\site-packages (from botocore<1.21.0,>=1.20.98->boto3) (1.26.5)
+2021-06-22 09:13:23,924 P1752 [INFO] 	Requirement already satisfied: six>=1.5 in c:\users\administrator\appdata\local\programs\python\python37-32\lib\site-packages (from python-dateutil<3.0.0,>=2.1->botocore<1.21.0,>=1.20.98->boto3) (1.16.0)
+2021-06-22 09:13:23,924 P1752 [INFO] 	Installing collected packages: python-dateutil, jmespath, botocore, s3transfer, boto3
+2021-06-22 09:13:23,924 P1752 [INFO] 	Successfully installed boto3-1.17.98 botocore-1.20.98 jmespath-0.10.0 python-dateutil-2.8.1 s3transfer-0.4.2
+2021-06-22 09:13:23,924 P1752 [INFO] 	OverloadDefinitions                                                                                                    
+2021-06-22 09:13:23,924 P1752 [INFO] 	-------------------                                                                                                    
+2021-06-22 09:13:23,924 P1752 [INFO] 	static void SetEnvironmentVariable(string variable, string value)                                                      
+2021-06-22 09:13:23,924 P1752 [INFO] 	static void SetEnvironmentVariable(string variable, string value, System.EnvironmentVariableTarget target)             
+2021-06-22 09:13:23,924 P1752 [INFO] 	                                                                                                                       
+2021-06-22 09:13:23,924 P1752 [INFO] 	C:\Users\Administrator\AppData\Local\Programs\Python\Python37-32\
+2021-06-22 09:13:23,924 P1752 [INFO] 	C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Amazon\cfn-bootstrap\;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps
+2021-06-22 09:13:23,924 P1752 [INFO] 	Machine
+2021-06-22 09:13:23,924 P1752 [INFO] 	static void SetEnvironmentVariable(string variable, string value)                                                      
+2021-06-22 09:13:23,924 P1752 [INFO] 	static void SetEnvironmentVariable(string variable, string value, System.EnvironmentVariableTarget target)             
+2021-06-22 09:13:23,924 P1752 [INFO] 	                                                                                                                       
+2021-06-22 09:13:23,924 P1752 [INFO] 	C:\Users\Administrator\AppData\Local\Programs\Python\Python37-32\Scripts\
+2021-06-22 09:13:23,924 P1752 [INFO] 	C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Amazon\cfn-bootstrap\;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps
+2021-06-22 09:13:23,924 P1752 [INFO] 	Machine
+2021-06-22 09:13:23,924 P1752 [INFO] 	
+2021-06-22 09:13:23,924 P1752 [INFO] 	
+2021-06-22 09:13:23,924 P1752 [INFO] ------------------------------------------------------------
+2021-06-22 09:13:23,924 P1752 [INFO] Completed successfully.
+2021-06-22 09:13:28,956 P1752 [INFO] ============================================================
+2021-06-22 09:13:28,956 P1752 [INFO] Command 4-signal
+2021-06-22 09:13:28,972 P1752 [INFO] -----------------------Command Output-----------------------
+2021-06-22 09:13:28,972 P1752 [INFO] 	''cfn-signal.exe' is not recognized as an internal or external command,
+2021-06-22 09:13:28,972 P1752 [INFO] 	operable program or batch file.
+2021-06-22 09:13:28,972 P1752 [INFO] ------------------------------------------------------------
+2021-06-22 09:13:28,972 P1752 [ERROR] Exited with error code 1

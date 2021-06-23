@@ -1,0 +1,278 @@
+2021-06-22 09:10:53,815 [DEBUG] CloudFormation client initialized with endpoint https://cloudformation.us-east-1.amazonaws.com
+2021-06-22 09:10:53,815 [DEBUG] Describing resource MIDBastion in stack arn:aws:cloudformation:us-east-1:523660704145:stack/mod-5f9b522779364ded-SOURCEBASTION-E4P0S1KZRIF/78804180-d339-11eb-8145-0e1b8dfea4f7
+2021-06-22 09:10:53,956 [INFO] -----------------------Starting build-----------------------
+2021-06-22 09:10:53,956 [DEBUG] Get scheduler for set_reboot_trigger
+2021-06-22 09:10:54,127 [DEBUG] Creating Scheduled Task for cfn-init resume
+2021-06-22 09:10:54,174 [DEBUG] Scheduled Task created
+2021-06-22 09:10:54,174 [INFO] Running configSets: bastion_install
+2021-06-22 09:10:54,174 [INFO] Running configSet bastion_install
+2021-06-22 09:10:54,174 [INFO] Running config install_cfn
+2021-06-22 09:10:54,174 [DEBUG] No packages specified
+2021-06-22 09:10:54,174 [DEBUG] No groups specified
+2021-06-22 09:10:54,174 [DEBUG] No users specified
+2021-06-22 09:10:54,174 [DEBUG] No sources specified
+2021-06-22 09:10:54,174 [DEBUG] Writing content to c:\cfn\cfn-hup.conf
+2021-06-22 09:10:54,190 [DEBUG] No mode specified for c:\cfn\cfn-hup.conf. The file will be created with the mode: 0o664
+2021-06-22 09:10:54,190 [WARNING] Unsupported OS for setting owner/group: nt
+2021-06-22 09:10:54,190 [DEBUG] Parent directory c:\cfn\hooks.d does not exist, creating
+2021-06-22 09:10:54,190 [DEBUG] Writing content to c:\cfn\hooks.d\cfn-auto-reloader.conf
+2021-06-22 09:10:54,190 [DEBUG] No mode specified for c:\cfn\hooks.d\cfn-auto-reloader.conf. The file will be created with the mode: 0o664
+2021-06-22 09:10:54,190 [WARNING] Unsupported OS for setting owner/group: nt
+2021-06-22 09:10:54,190 [DEBUG] No commands specified
+2021-06-22 09:10:54,284 [DEBUG] Starting service cfn-hup as it is not running
+2021-06-22 09:10:54,565 [INFO] Running config install_apps
+2021-06-22 09:10:54,565 [DEBUG] No packages specified
+2021-06-22 09:10:54,565 [DEBUG] No groups specified
+2021-06-22 09:10:54,581 [DEBUG] No users specified
+2021-06-22 09:10:54,596 [ERROR] ConnectionError
+Traceback (most recent call last):
+  File "cfnbootstrap\packages\requests\packages\urllib3\connectionpool.pyc", line 542, in urlopen
+  File "cfnbootstrap\packages\requests\packages\urllib3\connectionpool.pyc", line 341, in _make_request
+  File "cfnbootstrap\packages\requests\packages\urllib3\connectionpool.pyc", line 762, in _validate_conn
+  File "cfnbootstrap\packages\requests\packages\urllib3\connection.pyc", line 204, in connect
+  File "cfnbootstrap\packages\requests\packages\urllib3\connection.pyc", line 133, in _new_conn
+  File "cfnbootstrap\packages\requests\packages\urllib3\util\connection.pyc", line 64, in create_connection
+  File "socket.pyc", line 953, in getaddrinfo
+socket.gaierror: [Errno 11002] getaddrinfo failed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "cfnbootstrap\packages\requests\adapters.pyc", line 360, in send
+  File "cfnbootstrap\packages\requests\packages\urllib3\connectionpool.pyc", line 596, in urlopen
+  File "cfnbootstrap\packages\requests\packages\urllib3\util\retry.pyc", line 245, in increment
+  File "cfnbootstrap\packages\requests\packages\urllib3\packages\six.pyc", line 309, in reraise
+  File "cfnbootstrap\packages\requests\packages\urllib3\connectionpool.pyc", line 542, in urlopen
+  File "cfnbootstrap\packages\requests\packages\urllib3\connectionpool.pyc", line 341, in _make_request
+  File "cfnbootstrap\packages\requests\packages\urllib3\connectionpool.pyc", line 762, in _validate_conn
+  File "cfnbootstrap\packages\requests\packages\urllib3\connection.pyc", line 204, in connect
+  File "cfnbootstrap\packages\requests\packages\urllib3\connection.pyc", line 133, in _new_conn
+  File "cfnbootstrap\packages\requests\packages\urllib3\util\connection.pyc", line 64, in create_connection
+  File "socket.pyc", line 953, in getaddrinfo
+cfnbootstrap.packages.requests.packages.urllib3.exceptions.ProtocolError: ('Connection aborted.', gaierror(11002, 'getaddrinfo failed'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "cfnbootstrap\util.pyc", line 188, in _retry
+  File "cfnbootstrap\sources_tool.pyc", line 152, in _archive_from_url
+  File "cfnbootstrap\packages\requests\api.pyc", line 68, in get
+  File "cfnbootstrap\packages\requests\api.pyc", line 50, in request
+  File "cfnbootstrap\packages\requests\sessions.pyc", line 464, in request
+  File "cfnbootstrap\packages\requests\sessions.pyc", line 576, in send
+  File "cfnbootstrap\packages\requests\adapters.pyc", line 415, in send
+cfnbootstrap.packages.requests.exceptions.ConnectionError: ('Connection aborted.', gaierror(11002, 'getaddrinfo failed'))
+2021-06-22 09:10:54,612 [DEBUG] Sleeping for 0.304943 seconds before retrying
+2021-06-22 09:10:54,925 [ERROR] ConnectionError
+Traceback (most recent call last):
+  File "cfnbootstrap\packages\requests\packages\urllib3\connectionpool.pyc", line 542, in urlopen
+  File "cfnbootstrap\packages\requests\packages\urllib3\connectionpool.pyc", line 341, in _make_request
+  File "cfnbootstrap\packages\requests\packages\urllib3\connectionpool.pyc", line 762, in _validate_conn
+  File "cfnbootstrap\packages\requests\packages\urllib3\connection.pyc", line 204, in connect
+  File "cfnbootstrap\packages\requests\packages\urllib3\connection.pyc", line 133, in _new_conn
+  File "cfnbootstrap\packages\requests\packages\urllib3\util\connection.pyc", line 64, in create_connection
+  File "socket.pyc", line 953, in getaddrinfo
+socket.gaierror: [Errno 11002] getaddrinfo failed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "cfnbootstrap\packages\requests\adapters.pyc", line 360, in send
+  File "cfnbootstrap\packages\requests\packages\urllib3\connectionpool.pyc", line 596, in urlopen
+  File "cfnbootstrap\packages\requests\packages\urllib3\util\retry.pyc", line 245, in increment
+  File "cfnbootstrap\packages\requests\packages\urllib3\packages\six.pyc", line 309, in reraise
+  File "cfnbootstrap\packages\requests\packages\urllib3\connectionpool.pyc", line 542, in urlopen
+  File "cfnbootstrap\packages\requests\packages\urllib3\connectionpool.pyc", line 341, in _make_request
+  File "cfnbootstrap\packages\requests\packages\urllib3\connectionpool.pyc", line 762, in _validate_conn
+  File "cfnbootstrap\packages\requests\packages\urllib3\connection.pyc", line 204, in connect
+  File "cfnbootstrap\packages\requests\packages\urllib3\connection.pyc", line 133, in _new_conn
+  File "cfnbootstrap\packages\requests\packages\urllib3\util\connection.pyc", line 64, in create_connection
+  File "socket.pyc", line 953, in getaddrinfo
+cfnbootstrap.packages.requests.packages.urllib3.exceptions.ProtocolError: ('Connection aborted.', gaierror(11002, 'getaddrinfo failed'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "cfnbootstrap\util.pyc", line 188, in _retry
+  File "cfnbootstrap\sources_tool.pyc", line 152, in _archive_from_url
+  File "cfnbootstrap\packages\requests\api.pyc", line 68, in get
+  File "cfnbootstrap\packages\requests\api.pyc", line 50, in request
+  File "cfnbootstrap\packages\requests\sessions.pyc", line 464, in request
+  File "cfnbootstrap\packages\requests\sessions.pyc", line 576, in send
+  File "cfnbootstrap\packages\requests\adapters.pyc", line 415, in send
+cfnbootstrap.packages.requests.exceptions.ConnectionError: ('Connection aborted.', gaierror(11002, 'getaddrinfo failed'))
+2021-06-22 09:10:54,925 [DEBUG] Sleeping for 0.461144 seconds before retrying
+2021-06-22 09:10:55,393 [ERROR] ConnectionError
+Traceback (most recent call last):
+  File "cfnbootstrap\packages\requests\packages\urllib3\connectionpool.pyc", line 542, in urlopen
+  File "cfnbootstrap\packages\requests\packages\urllib3\connectionpool.pyc", line 341, in _make_request
+  File "cfnbootstrap\packages\requests\packages\urllib3\connectionpool.pyc", line 762, in _validate_conn
+  File "cfnbootstrap\packages\requests\packages\urllib3\connection.pyc", line 204, in connect
+  File "cfnbootstrap\packages\requests\packages\urllib3\connection.pyc", line 133, in _new_conn
+  File "cfnbootstrap\packages\requests\packages\urllib3\util\connection.pyc", line 64, in create_connection
+  File "socket.pyc", line 953, in getaddrinfo
+socket.gaierror: [Errno 11002] getaddrinfo failed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "cfnbootstrap\packages\requests\adapters.pyc", line 360, in send
+  File "cfnbootstrap\packages\requests\packages\urllib3\connectionpool.pyc", line 596, in urlopen
+  File "cfnbootstrap\packages\requests\packages\urllib3\util\retry.pyc", line 245, in increment
+  File "cfnbootstrap\packages\requests\packages\urllib3\packages\six.pyc", line 309, in reraise
+  File "cfnbootstrap\packages\requests\packages\urllib3\connectionpool.pyc", line 542, in urlopen
+  File "cfnbootstrap\packages\requests\packages\urllib3\connectionpool.pyc", line 341, in _make_request
+  File "cfnbootstrap\packages\requests\packages\urllib3\connectionpool.pyc", line 762, in _validate_conn
+  File "cfnbootstrap\packages\requests\packages\urllib3\connection.pyc", line 204, in connect
+  File "cfnbootstrap\packages\requests\packages\urllib3\connection.pyc", line 133, in _new_conn
+  File "cfnbootstrap\packages\requests\packages\urllib3\util\connection.pyc", line 64, in create_connection
+  File "socket.pyc", line 953, in getaddrinfo
+cfnbootstrap.packages.requests.packages.urllib3.exceptions.ProtocolError: ('Connection aborted.', gaierror(11002, 'getaddrinfo failed'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "cfnbootstrap\util.pyc", line 188, in _retry
+  File "cfnbootstrap\sources_tool.pyc", line 152, in _archive_from_url
+  File "cfnbootstrap\packages\requests\api.pyc", line 68, in get
+  File "cfnbootstrap\packages\requests\api.pyc", line 50, in request
+  File "cfnbootstrap\packages\requests\sessions.pyc", line 464, in request
+  File "cfnbootstrap\packages\requests\sessions.pyc", line 576, in send
+  File "cfnbootstrap\packages\requests\adapters.pyc", line 415, in send
+cfnbootstrap.packages.requests.exceptions.ConnectionError: ('Connection aborted.', gaierror(11002, 'getaddrinfo failed'))
+2021-06-22 09:10:55,393 [DEBUG] Sleeping for 6.221036 seconds before retrying
+2021-06-22 09:11:01,708 [DEBUG] Treating https://advancemigrationtraining.s3.amazonaws.com/Migrations.zip as a zip archive
+2021-06-22 09:11:01,708 [DEBUG] Checking to ensure that all archive members fall under path c:\
+2021-06-22 09:11:01,708 [DEBUG] Expanding https://advancemigrationtraining.s3.amazonaws.com/Migrations.zip into c:\
+2021-06-22 09:11:01,755 [DEBUG] Parent directory c:\cfn\scripts does not exist, creating
+2021-06-22 09:11:01,755 [DEBUG] Writing content to c:\cfn\scripts\installchrome.ps1
+2021-06-22 09:11:01,755 [DEBUG] No mode specified for c:\cfn\scripts\installchrome.ps1. The file will be created with the mode: 0o664
+2021-06-22 09:11:01,755 [WARNING] Unsupported OS for setting owner/group: nt
+2021-06-22 09:11:01,755 [DEBUG] Writing content to c:\cfn\scripts\installputty.ps1
+2021-06-22 09:11:01,755 [DEBUG] No mode specified for c:\cfn\scripts\installputty.ps1. The file will be created with the mode: 0o664
+2021-06-22 09:11:01,755 [WARNING] Unsupported OS for setting owner/group: nt
+2021-06-22 09:11:01,755 [DEBUG] Writing content to c:\cfn\scripts\installpython.ps1
+2021-06-22 09:11:01,755 [DEBUG] No mode specified for c:\cfn\scripts\installpython.ps1. The file will be created with the mode: 0o664
+2021-06-22 09:11:01,755 [WARNING] Unsupported OS for setting owner/group: nt
+2021-06-22 09:11:01,755 [DEBUG] Writing content to c:\putty.reg
+2021-06-22 09:11:01,772 [DEBUG] Retrieving contents from https://advancemigrationtraining.s3.amazonaws.com/putty.reg
+2021-06-22 09:11:01,867 [DEBUG] No mode specified for c:\putty.reg. The file will be created with the mode: 0o664
+2021-06-22 09:11:01,867 [WARNING] Unsupported OS for setting owner/group: nt
+2021-06-22 09:11:01,911 [DEBUG] No services specified
+2021-06-22 09:11:02,005 [DEBUG] Running command 0-installchrome
+2021-06-22 09:11:02,005 [DEBUG] No test for command 0-installchrome
+2021-06-22 09:11:43,219 [INFO] Command 0-installchrome succeeded
+2021-06-22 09:11:43,219 [DEBUG] Command 0-installchrome output: 
+2021-06-22 09:11:43,219 [INFO] Waiting 5 seconds for reboot
+2021-06-22 09:11:48,267 [DEBUG] Running command 0-installputty
+2021-06-22 09:11:48,267 [DEBUG] No test for command 0-installputty
+2021-06-22 09:11:56,988 [INFO] Command 0-installputty succeeded
+2021-06-22 09:11:56,988 [DEBUG] Command 0-installputty output: 
+
+    Directory: C:\Users\Administrator\Desktop
+
+
+Mode                LastWriteTime         Length Name                                                                  
+----                -------------         ------ ----                                                                  
+-a---l        6/22/2021   9:11 AM              0 Putty                                                                 
+The operation completed successfully.
+
+
+
+2021-06-22 09:11:56,988 [INFO] Waiting 5 seconds for reboot
+2021-06-22 09:12:02,005 [DEBUG] Running command 0-installpython
+2021-06-22 09:12:02,005 [DEBUG] No test for command 0-installpython
+2021-06-22 09:13:23,924 [INFO] Command 0-installpython succeeded
+2021-06-22 09:13:23,924 [DEBUG] Command 0-installpython output: 
+Collecting pip
+  Downloading https://files.pythonhosted.org/packages/cd/82/04e9aaf603fdbaecb4323b9e723f13c92c245f6ab2902195c53987848c78/pip-21.1.2-py3-none-any.whl (1.5MB)
+Installing collected packages: pip
+  Found existing installation: pip 19.2.3
+    Uninstalling pip-19.2.3:
+      Successfully uninstalled pip-19.2.3
+Successfully installed pip-21.1.2
+Collecting requests
+  Downloading requests-2.25.1-py2.py3-none-any.whl (61 kB)
+Collecting chardet<5,>=3.0.2
+  Downloading chardet-4.0.0-py2.py3-none-any.whl (178 kB)
+Collecting urllib3<1.27,>=1.21.1
+  Downloading urllib3-1.26.5-py2.py3-none-any.whl (138 kB)
+Collecting certifi>=2017.4.17
+  Downloading certifi-2021.5.30-py2.py3-none-any.whl (145 kB)
+Collecting idna<3,>=2.5
+  Downloading idna-2.10-py2.py3-none-any.whl (58 kB)
+Installing collected packages: urllib3, idna, chardet, certifi, requests
+  WARNING: The script chardetect.exe is installed in 'C:\Users\Administrator\AppData\Local\Programs\Python\Python37-32\Scripts' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+Successfully installed certifi-2021.5.30 chardet-4.0.0 idna-2.10 requests-2.25.1 urllib3-1.26.5
+Collecting paramiko
+  Downloading paramiko-2.7.2-py2.py3-none-any.whl (206 kB)
+Collecting bcrypt>=3.1.3
+  Downloading bcrypt-3.2.0-cp36-abi3-win32.whl (27 kB)
+Collecting pynacl>=1.0.1
+  Downloading PyNaCl-1.4.0-cp37-cp37m-win32.whl (193 kB)
+Collecting cryptography>=2.5
+  Downloading cryptography-3.4.7-cp36-abi3-win32.whl (1.4 MB)
+Collecting cffi>=1.1
+  Downloading cffi-1.14.5-cp37-cp37m-win32.whl (166 kB)
+Collecting six>=1.4.1
+  Downloading six-1.16.0-py2.py3-none-any.whl (11 kB)
+Collecting pycparser
+  Downloading pycparser-2.20-py2.py3-none-any.whl (112 kB)
+Installing collected packages: pycparser, six, cffi, pynacl, cryptography, bcrypt, paramiko
+Successfully installed bcrypt-3.2.0 cffi-1.14.5 cryptography-3.4.7 paramiko-2.7.2 pycparser-2.20 pynacl-1.4.0 six-1.16.0
+Collecting boto3
+  Downloading boto3-1.17.98-py2.py3-none-any.whl (131 kB)
+Collecting s3transfer<0.5.0,>=0.4.0
+  Downloading s3transfer-0.4.2-py2.py3-none-any.whl (79 kB)
+Collecting jmespath<1.0.0,>=0.7.1
+  Downloading jmespath-0.10.0-py2.py3-none-any.whl (24 kB)
+Collecting botocore<1.21.0,>=1.20.98
+  Downloading botocore-1.20.98-py2.py3-none-any.whl (7.6 MB)
+Collecting python-dateutil<3.0.0,>=2.1
+  Downloading python_dateutil-2.8.1-py2.py3-none-any.whl (227 kB)
+Requirement already satisfied: urllib3<1.27,>=1.25.4 in c:\users\administrator\appdata\local\programs\python\python37-32\lib\site-packages (from botocore<1.21.0,>=1.20.98->boto3) (1.26.5)
+Requirement already satisfied: six>=1.5 in c:\users\administrator\appdata\local\programs\python\python37-32\lib\site-packages (from python-dateutil<3.0.0,>=2.1->botocore<1.21.0,>=1.20.98->boto3) (1.16.0)
+Installing collected packages: python-dateutil, jmespath, botocore, s3transfer, boto3
+Successfully installed boto3-1.17.98 botocore-1.20.98 jmespath-0.10.0 python-dateutil-2.8.1 s3transfer-0.4.2
+OverloadDefinitions                                                                                                    
+-------------------                                                                                                    
+static void SetEnvironmentVariable(string variable, string value)                                                      
+static void SetEnvironmentVariable(string variable, string value, System.EnvironmentVariableTarget target)             
+                                                                                                                       
+C:\Users\Administrator\AppData\Local\Programs\Python\Python37-32\
+C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Amazon\cfn-bootstrap\;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps
+Machine
+static void SetEnvironmentVariable(string variable, string value)                                                      
+static void SetEnvironmentVariable(string variable, string value, System.EnvironmentVariableTarget target)             
+                                                                                                                       
+C:\Users\Administrator\AppData\Local\Programs\Python\Python37-32\Scripts\
+C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Amazon\cfn-bootstrap\;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps
+Machine
+
+
+
+2021-06-22 09:13:23,924 [INFO] Waiting 5 seconds for reboot
+2021-06-22 09:13:28,956 [DEBUG] Running command 4-signal
+2021-06-22 09:13:28,956 [DEBUG] No test for command 4-signal
+2021-06-22 09:13:28,972 [ERROR] Command 4-signal ('cfn-signal.exe -e %ERRORLEVEL% --stack arn:aws:cloudformation:us-east-1:523660704145:stack/mod-5f9b522779364ded-SOURCEBASTION-E4P0S1KZRIF/78804180-d339-11eb-8145-0e1b8dfea4f7 --resource MIDBastion --region us-east-1
+) failed
+2021-06-22 09:13:28,972 [DEBUG] Command 4-signal output: ''cfn-signal.exe' is not recognized as an internal or external command,
+operable program or batch file.
+
+2021-06-22 09:13:28,972 [ERROR] Error encountered during build of install_apps: Command 4-signal failed
+Traceback (most recent call last):
+  File "cfnbootstrap\construction.pyc", line 575, in run_config
+  File "cfnbootstrap\construction.pyc", line 144, in run_commands
+  File "cfnbootstrap\command_tool.pyc", line 127, in apply
+cfnbootstrap.construction_errors.ToolError: Command 4-signal failed
+2021-06-22 09:13:28,972 [ERROR] -----------------------BUILD FAILED!------------------------
+2021-06-22 09:13:28,972 [ERROR] Unhandled exception during build: Command 4-signal failed
+Traceback (most recent call last):
+  File "cfn-init", line 176, in <module>
+  File "cfnbootstrap\construction.pyc", line 135, in build
+  File "cfnbootstrap\construction.pyc", line 561, in build
+  File "cfnbootstrap\construction.pyc", line 575, in run_config
+  File "cfnbootstrap\construction.pyc", line 144, in run_commands
+  File "cfnbootstrap\command_tool.pyc", line 127, in apply
+cfnbootstrap.construction_errors.ToolError: Command 4-signal failed
