@@ -1,0 +1,5 @@
+wave_id,app_name,cloudendure_projectname,server_name,server_os,server_os_version,server_fqdn,server_tier,server_environment,subnet_IDs,securitygroup_IDs,subnet_IDs_test,securitygroup_IDs_test,instanceType,tenancy
+1,Wordpress,project1,wordpress-web.onpremsim.env,linux,CentOS7,wordpress-web.onpremsim.env,web,prod,subnet-xxxxxxxx,sg-yyyyy,subnet-xxxxxxxx,sg-yyyyy,t3.medium,Shared
+1,Wordpress,project1,wordpress-db.onpremsim.env,linux,CentOS7,wordpress-db.onpremsim.env,db,prod,subnet-xxxxxxxx,sg-yyyyy,subnet-xxxxxxxx,sg-yyyyy,t3.medium,Shared
+1,Snakes,project1,snakes-web.onpremsim.env,linux,Ubuntu18,snakes-web.onpremsim.env,web,prod,subnet-xxxxxxxx,sg-yyyyy,subnet-xxxxxxxx,sg-yyyyy,t3.medium,Shared
+1,Snakes,project1,snakes-db.onpremsim.env,linux,Ubuntu18,snakes-db.onpremsim.env,db,prod,subnet-xxxxxxxx,sg-yyyyy,subnet-xxxxxxxx,sg-yyyyy,t3.medium,Shared
